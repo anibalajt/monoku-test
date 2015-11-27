@@ -47,7 +47,9 @@ app.controller('appController', function ($scope,$http) {
                                 similar:similar
                             })
                         }
-
+                        if($scope.artista.length == 0){
+                            $scope.listArtistas = []
+                        }
                     })
                 })
             });
