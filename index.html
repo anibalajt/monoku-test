@@ -22,9 +22,9 @@
         </li>
     </ul>
     <div class="fondoModal ng-hide" ng-hide="verModal"></div>
-    <div class="modal ng-hide" ng-hide="verModal">
+    <div class="modal {{modalTranst}}">
         <div style="padding: 20px;">
-            <div class="closed" ng-click="verModal = true;disabled=''">x</div>
+            <div class="closed" ng-click="verModal = true;disabled='';modalTranst=''">x</div>
             <div class="contentModel">
                 <span>{{nameModal}}</span>
                 <img src="{{imageModal}}" alt="" />

@@ -78,25 +78,20 @@ ul,li{
     z-index: 998;
     background: rgba(0, 0, 0, 0.37);
 }
+.modalTranst{
+    top: 0 !important;
+}
 .modal {
-
     position: absolute;
-
     width: 100%;
-
     height: 100%;
-
     z-index: 999;
-
     background: #fff;
-
-    top: 0;
-
+    top: -1000px;
     overflow: hidden;
-
     bottom: 0;
-
     overflow: auto;
+    transition: 0.5s;
 }
 
 .contentModel > div {
