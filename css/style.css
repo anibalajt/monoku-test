@@ -1,0 +1,132 @@
+
+html,body {
+    height: 100%;
+    margin: 0;
+    background-color: #fff;
+    /*font-family: 'RobotoDraft', sans-serif;*/
+    font-family: arial,sans-serif;
+}
+ul,li{
+    list-style: none;
+    padding: 0;
+}
+.contentBuscar > span{
+    display: table;
+    margin: auto;
+    font-size: 24px;
+}
+.contentBuscar{
+    width: 50%;
+    height: 92px;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 10;
+    /*-webkit-transition: all 1s;*/
+}
+.buscarArtista {
+    width: 100%;
+    height: 17px;
+    position: relative;
+    padding: 7px;
+    display: table;
+}
+.inputTop {
+    bottom: initial;
+    top: 17px !important;
+}
+.result{
+    margin-top: 95px;
+}
+.artista {
+    float: left;
+    height: 174px;
+    width: 174px;
+    position: relative;
+    margin:  10px 5px;
+    overflow: hidden;
+}
+.artista:hover {
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.75);
+}
+.artista > img {
+    width: 174px;
+    height: 174px;
+}
+.artista > span {
+    font-size: 14px;
+    position: absolute;
+    bottom: 0;
+    display: table;
+    width: 100%;
+    padding: 7px 0px;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.37);
+}
+.fondoModal{
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom:0;
+    width: 100%;
+    height: 100%;
+    z-index: 998;
+    background: rgba(0, 0, 0, 0.37);
+}
+.modal {
+
+    position: absolute;
+
+    width: 100%;
+
+    height: 100%;
+
+    z-index: 999;
+
+    background: #fff;
+
+    top: 0;
+
+    overflow: hidden;
+
+    bottom: 0;
+
+    overflow: auto;
+}
+
+.contentModel > div {
+    padding: 0px;
+}
+.contentModel >:nth-child(1) {
+    font-size: 24px;
+    display: table;
+    padding: 0px 0px 10px 0px;
+}
+
+.contentModel >:nth-child(2){
+    padding: 0px 22px 10px 0px;
+    float: left;
+}
+.closed{
+    position: absolute;
+    right: 0;
+    font-size: 28px;
+    top: -9px;
+    padding: 10px;
+}
+.title {
+    font-weight: bold;
+    font-size: 23px;
+}
+.enabledScroll {
+    overflow: hidden;
+}
+ul.relacionado {
+    display: table;
+    width: 100%;
+}

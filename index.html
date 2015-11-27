@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/underscore/underscore-min.js"></script>
+    <script src="js/app.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body ng-controller="appController" class="{{disabled}}">
+    <div class="contentBuscar {{inputTop}}">
+        <span>
+            Buscar artistas
+        </span>
+        <input type="text" name="name" ng-model="artista" class="buscarArtista " ng-change="buscarArtista(artista,15)"  value="">
+    </div>
+    <ul class="result">
+        <li ng-repeat="item in listArtistas" class="artista" ng-click="modal(item)">
+            <img src="{{item.image}}" alt="" />
+            <span>
+                {{item.name}}
+            </span>
+        </li>
+    </ul>
+    <div class="fondoModal ng-hide" ng-hide="verModal"></div>
+    <div class="modal ng-hide" ng-hide="verModal">
+        <div style="padding: 20px;">
+            <div class="closed" ng-click="verModal = true;disabled=''">x</div>
+            <div class="contentModel">
+                <span>{{nameModal}}</span>
+                <img src="{{imageModal}}" alt="" />
+                <div class="">
+                    {{bioModal}}
+                </div>
+
+                <ul class="relacionado">
+                    <li class="title">artistas relacionados</li>
+                    <li ng-repeat="item in relacionado.artist" class="artistaRelacionado" ng-click="buscarArtista(item.name,1,true)">
+                        {{item.name}}
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
