@@ -57,6 +57,7 @@ app.controller('appController', function ($scope,$http) {
         }
     }
     $scope.modal = function(item){
+        document.body.scrollTop = 0
         $scope.disabled = "enabledScroll"
         $scope.verModal = false;
         $scope.imageModal = item.image
